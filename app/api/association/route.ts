@@ -2,6 +2,8 @@
 import { NextResponse } from 'next/server';
 import { NeynarAPIClient } from "@neynar/nodejs-sdk";
 
+export const dynamic = 'force-dynamic';
+
 export async function GET() {
   // Bu endpoint sadece Neynar'ın kimlik doğrulaması için var
   // ve manifest dosyasında belirtilen özel bir token'ı döndürür.
